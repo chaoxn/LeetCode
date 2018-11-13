@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //
+        let l1 = leetcode_01()
+        print(l1.twoSum([1,2,3,4,5], 3))
     }
 }
 
