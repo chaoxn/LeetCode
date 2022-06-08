@@ -383,17 +383,113 @@ class Solution_temp {
     }
 }
 
-
+//128. 最长连续序列
+/***
+ 输入：nums = [100,4,200,1,3,2]
+ 输出：4
+ 解释：最长数字连续序列是 [1, 2, 3, 4]。它的长度为 4。
+ */
 class Hot100_11 {
-    
+    //排序
+    func longestConsecutive(_ nums: [Int]) -> Int {
+        let nums = nums.sorted()
+        var count = 1
+        var res = 1
+        
+        for i in 1..<nums.count{
+            if nums[i] - nums[i-1] == 1 {
+                count += 1
+            }else{
+                res = max(count, res)
+                count = 1
+            }
+        }
+        res = max(count, res)
+        return res
+    }
+    //空间换时间 - map
+    func longestConsecutive1(_ nums: [Int]) -> Int {
+        let num_set = Set(nums)
+        var maxCount = 0
+        //遍历nums，如果set中存在nums[i]-1，则表示这个元素不是开始元素，所以不会是最长的连续子序列起点，跳过。
+        for num in num_set {
+            if !num_set.contains(num-1) {
+                var currentNum = num
+                var currentCount = 1
+                //对于没有nums[i]-1的元素，则表示为起点，开始循环，每次+1，判断是否在set中，并维护变量记录最大值。
+                while num_set.contains(currentNum + 1) {
+                    currentCount += 1
+                    currentNum += 1
+                }
+                maxCount = max(maxCount, currentCount)
+            }
+        }
+        return maxCount
+    }
 }
 
+//139. 单词拆分
+/***
+ 输入: s = "applepenapple", wordDict = ["apple", "pen"]
+ 输出: true
+ 解释: 返回 true 因为 "applepenapple" 可以由 "apple" "pen" "apple" 拼接成。
+      注意，你可以重复使用字典中的单词。
+ */
 class Hot100_12 {
-    
+    func wordBreak(_ s: String, _ wordDict: [String]) -> Bool {
+        
+        var s = s
+        
+        func handleStr(_ str: String){
+            if !s.contains(str){
+                return
+            }
+            s = s.replacingOccurrences(of: str, with: "")
+            handleStr(str)
+        }
+        
+            for str in wordDict {
+                if s.contains(str){
+                    handleStr(str)
+                    if s.count == 0 {
+                        return true
+                    }
+                }
+            }
+
+        
+        return false
+    }
 }
 
+
+//114. 二叉树展开为链表
 class Hot100_13 {
-    
+    func flatten(_ root: TreeNode?) {
+        guard root != nil else {
+            return
+        }
+        
+        //先把左右两边拉直,虽然不知道怎么拉,但是知道这个函数就是拉直就好了
+        flatten(root?.left)
+        flatten(root?.right)
+        
+        //已经拉直的左右子树
+        let left = root?.left
+        let right = root?.right
+        
+        //左子树置空, 左子树放在右子树上
+        root?.left = nil
+        root?.right = left
+        
+        //将原先的右子树接到当前右子树的末端
+        // p节点从根节点 指向交换完的左子树末端
+        var p = root
+        while p?.right != nil{
+            p = p?.right
+        }
+        p?.right = right
+    }
 }
 
 class Hot100_14 {
