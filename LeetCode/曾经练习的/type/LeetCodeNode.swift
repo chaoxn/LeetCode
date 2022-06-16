@@ -518,6 +518,10 @@ func mergeTwoLists2(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
     return dummy?.next
 }
 
+/***
+ 4 1 8 4 5 -> 5 6 1 8 4 5
+ 5 6 1 8 4 5 -> 4 1 8 4 5
+ */
 //160 相交链表
 func getIntersectionNode(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
     // p1 指向 A 链表头结点，p2 指向 B 链表头结点
@@ -759,7 +763,6 @@ func reverseBetween(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
         pre?.next = removeTempNode
     }
     
-
     return dummy?.next
 }
 
@@ -836,7 +839,7 @@ func sortList(_ head: ListNode?) -> ListNode? {
     }
  
     //中间节点
-    var tmp = slow?.next
+    let tmp = slow?.next
     
     slow?.next = nil
     
@@ -844,7 +847,7 @@ func sortList(_ head: ListNode?) -> ListNode? {
     var left = sortList(head)
     var right = sortList(tmp)
     var h = ListNode(0)
-    var res = h
+    let res = h
     
     while left != nil && right != nil {
         if left?.val ?? 0 < right?.val ?? 0{

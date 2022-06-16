@@ -87,7 +87,7 @@ class Solution_d3 {
 /*
  1. 确定dp含义: dp[i][j]  从dp[0][0] 到 dp[i][j] 的路径
  2. 确定状态转移方程: dp[i][j] = dp[i-1][j] + dp[i][j-1]
- 3. 确定dp初始化数组  dp[i][0] = 1 dp[0][j] = 1
+ 3. 确定dp初始化数组  dp[i][0] = 1, dp[0][j] = 1
  4. 遍历顺序 从左到右
  **/
 class Solution_d4 {

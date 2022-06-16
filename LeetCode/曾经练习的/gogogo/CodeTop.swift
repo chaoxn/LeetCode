@@ -906,7 +906,9 @@ class Solution_24{
         var currentLeft = sorted[0][0]
         var currentRight = sorted[0][1]
         for i in 1..<count {
+            //[1,3] [2,6] -> [1,6]  2比第一个数组的最大值小 就可以合并
             if sorted[i][0] <= currentRight {
+                //这层判断判断右边界是以哪个合并前的为准,选一个最大的
                 if sorted[i][1] > currentRight {
                     currentRight = sorted[i][1]
                 }
@@ -953,6 +955,17 @@ class Solution_25 {
 }
 
 //232 用栈实现队列
+/***
+ 请你仅使用两个栈实现先入先出队列。队列应当支持一般队列支持的所有操作（push、pop、peek、empty）：
+
+ 实现 MyQueue 类：
+
+ void push(int x) 将元素 x 推到队列的末尾
+ int pop() 从队列的开头移除并返回元素
+ int peek() 返回队列开头的元素
+ boolean empty() 如果队列为空，返回 true ；否则，返回 false
+
+ */
 class MyQueue_26 {
 
     var stack1: [Int] = []
@@ -1029,7 +1042,6 @@ class Solution_27 {
     }
 }
 
-
 //739. 每日温度
 //单调栈问题
 class Solution_28 {
@@ -1077,7 +1089,6 @@ class Solution_29 {
         
         stack.append(0)
         
-
         for i in 1..<nums2.count{
             //stack.last 不要使用临时变量
             if nums2[i] <= nums2[stack.last!]{
@@ -1123,5 +1134,33 @@ class Solution_30 {
         }
         
         return res
+    }
+}
+
+//19. 删除链表的倒数第 N 个结点
+//输入：[1,2,3,4,5], n = 2
+        
+//输出：[1,2,3,5]
+class Solution_31 {
+    func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? {
+        
+        let dummy = ListNode(0, head)
+        var fast = head
+        var slow = head
+        var pre = dummy
+        
+        for _ in 0..<n {
+            fast = fast?.next
+        }
+        
+        while fast != nil {
+            pre = slow!
+            fast = fast?.next
+            slow = slow?.next
+        }
+        
+        pre.next = slow?.next
+        
+        return dummy.next
     }
 }

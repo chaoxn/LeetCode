@@ -434,31 +434,38 @@ class Hot100_11 {
  输出: true
  解释: 返回 true 因为 "applepenapple" 可以由 "apple" "pen" "apple" 拼接成。
       注意，你可以重复使用字典中的单词。
+      
+ dp[i] 表示 字符串 从 0 到 i 是可以被拆分的 dp[s.count]
+ 
+ 如果后续 从 i 到 j 也可以被单词拆分，那么 我们就能得出 dp[j] 是有效的。
+ 假设 从 字符串 s 中 拿出 两个 坐标 i 和 j,其中 i < j， word_set 为包含的单词集合
+
+ 初始态dp[0] = true
+ 如果 dp[i] = flase, 那么 dp[j] 自然也是 false ,不需要比对了
+ 如果 dp[i] = true, 那么 如果 word_set 包含子串 s[i..j], 那么 dp[j] = true , 否则 dp[j] = false
  */
 class Hot100_12 {
+   
     func wordBreak(_ s: String, _ wordDict: [String]) -> Bool {
-        
-        var s = s
-        
-        func handleStr(_ str: String){
-            if !s.contains(str){
-                return
+      let  word_set = Set(wordDict)
+      var dp = [Bool](repeating: false, count: s.count + 1)
+      dp[0] = true
+    
+      for j in 1...s.count {
+        //! 确定左边边界
+        let endIndex = s.index(s.startIndex, offsetBy: j)
+          for i in 0..<j {
+            //! 找到 一个可行的分割点
+            let starIndex = s.index(s.startIndex, offsetBy: i)
+            //! 判断当前 i 是可行的 并且 i~j 也是可行的
+            if dp[i] && word_set.contains(String(s[starIndex..<endIndex])) {
+              dp[j] = true
+              break
             }
-            s = s.replacingOccurrences(of: str, with: "")
-            handleStr(str)
+          }
         }
-        
-            for str in wordDict {
-                if s.contains(str){
-                    handleStr(str)
-                    if s.count == 0 {
-                        return true
-                    }
-                }
-            }
-
-        
-        return false
+    
+      return dp[s.count]
     }
 }
 
@@ -492,6 +499,237 @@ class Hot100_13 {
     }
 }
 
+//输入：nums = [1,2,3]
+//输出：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 class Hot100_14 {
+    func permute(_ nums: [Int]) -> [[Int]] {
+        
+        var res: [[Int]] = []
+        var track: [Int] = []
+        
+        func backtrack(_ track: inout [Int]){
+            
+            if track.count == nums.count {
+                res.append(track)
+            }
+            
+            for i in 0..<nums.count{
+                track.append(nums[i])
+                backtrack(&track)
+                track.removeLast()
+            }
+        }
+        
+        backtrack(&track)
+        return res
+    }
     
+}
+
+//打家劫舍
+// dp[i][j] , 其中 i 表示截止到 i 这个房子， j 表示这个房子需不需要偷。
+//dp[i][0] 表示不偷 i 这个房子的时候，所能得到的最大金额
+//dp[i][1] 表示需要偷 i这个房子的时候，所能得到的最大金额。
+class Hot100_15 {
+    func rob(_ nums: [Int]) -> Int {
+        
+      if nums.count == 0 {
+        return 0
+      }
+    
+      let n = nums.count
+      var dp = [[Int]](repeating: [Int](repeating: 0, count: 2), count: n)
+   
+      dp[0][0] = 0
+      dp[0][1] = nums[0]
+    
+      for i in 1..<n {
+        dp[i][0] = max(dp[i-1][0], dp[i-1][1])
+        dp[i][1] = dp[i-1][0] + nums[i]
+      }
+       return max(dp[n-1][0], dp[n-1][1])
+    }
+}
+
+//对于 香蕉数组，珂珂 每小时只能选择其中 一堆 去吃香蕉，假设速度是 k， 如果这堆香蕉 小于 k ，则直接吃了， 如果大于，就会剩下一些，等待下一小时去吃，然后我们需要在 守卫回来之前，把所以香蕉都吃掉。 所以我们如果速度够快，每一堆 顶多花费一小时（只有有一个香蕉，我们至少也要一个小时）。现在需要我们求 最小的 速度。
+class Hot100_16 {
+    func minEatingSpeed(_ piles: [Int], _ h: Int) -> Int {
+      var left = 1
+      var right = piles.max()!
+      //! 默认值
+      var res = right
+    
+      while left < right {
+        let midSpeed = (left + right) / 2
+        var curTime = 0
+        for pile in piles {
+          //! 向上取商
+          curTime += (pile + midSpeed - 1)/midSpeed
+        }
+        //! 当前时间小于 目标，说明可以进一步的减少速度
+        if curTime <= h {
+          res = midSpeed
+          right = midSpeed
+        } else {
+          left = midSpeed + 1
+        }
+      }
+      return res
+    }
+}
+
+/***
+ dp[i][j]：下标为 i 这一天结束的时候，手上持股状态为 j 时，我们持有的现金数。换种说法：dp[i][j] 表示天数 [0, i] 区间里，下标 i 这一天状态为 j 的时候能够获得的最大利润。其中：
+
+ j = 0，表示当前不持股；
+ j = 1，表示当前持股。
+
+ 推导状态转移方程：
+
+ dp[i][0]：规定了今天不持股，有以下两种情况：
+ 昨天不持股，今天什么都不做；
+ 昨天持股，今天卖出股票（现金数增加）
+ 
+ dp[i][1]：规定了今天持股，有以下两种情况：
+ 昨天持股，今天什么都不做（现金数与昨天一样）；
+ 昨天不持股，今天买入股票（注意：只允许交易一次，因此手上的现金数就是当天的股价的相反数）。
+
+ */
+class Hot100_17 {
+    func maxProfit(_ prices: [Int]) -> Int {
+        
+        let count = prices.count
+        
+        if count < 2 {
+            return 0
+        }
+        
+        var dp = Array.init(repeating: Array.init(repeating: 0, count: 2), count: count)
+        // dp[i][0] 下标为 i 这天结束的时候，不持股，手上拥有的现金数
+        // dp[i][1] 下标为 i 这天结束的时候，持股，手上拥有的现金数
+
+        // 初始化：不持股显然为 0，持股就需要减去第 1 天（下标为 0）的股价
+        dp[0][0] = 0;
+        dp[0][1] = -prices[0];
+        
+        for i in 1..<count {
+            dp[i][0] = max(dp[i - 1][0], dp[i - 1][1] + prices[i]);
+            dp[i][1] = max(dp[i - 1][1], -prices[i]);
+        }
+        
+        return dp[count-1][0]
+    }
+    
+    //用一个指针 实时更新为最新的最低股价，然后 看后面 的股票行情，如果比最低股价高，则尝试当天卖出，得出利润。
+    func maxProfit1(_ prices: [Int]) -> Int {
+      if prices.count <= 1 {
+        //！ 返回不合理数据
+        return 0
+      }
+      //！前面扫描过的 最大利润
+      var maxNumber = 0
+      //！前面扫描过的最低价格
+      var per = prices[0]
+      
+      for i in 1..<prices.count {
+        //！ 如果当前买入时机比之前的小，那么就在当前买入。
+        if prices[i] < per {
+          per =  prices[i]
+        } else {
+          //! 当前 i 天 的股价比 之前最低股价要高，我们尝试卖出，得出利润 并与之前的最大利润对比
+          maxNumber = max(maxNumber,  prices[i]-per)
+        }
+        
+      }
+      return maxNumber
+   
+    }
+}
+
+class Hot100_18{
+    //230. 二叉搜索树中第K小的元素
+    func kthSmallest(_ root: TreeNode?, _ k: Int) -> Int {
+        
+        var res = -1
+        var index = 0
+        func reverse(_ root: TreeNode?){
+            
+            guard root != nil else{
+                return
+            }
+            
+            reverse(root?.left)
+            index += 1
+            if index == k {
+                res = root!.val
+            }
+            reverse(root?.right)
+        }
+        
+        reverse(root)
+        return res
+    }
+
+    //538. 把二叉搜索树转换为累加树
+    func convertBST(_ root: TreeNode?) -> TreeNode? {
+        
+        var sum = 0
+        
+        func traverse(_ root: TreeNode?){
+            
+            guard root != nil else{
+                return
+            }
+            
+            traverse(root?.right)
+            sum += root!.val
+            root?.val = sum
+            traverse(root?.left)
+        }
+        
+        traverse(root)
+        return root
+    }
+}
+
+/**
+ 238. 除自身以外数组的乘积
+ 
+ 给你一个整数数组 nums，返回 数组 answer ，其中 answer[i] 等于 nums 中除 nums[i] 之外其余各元素的乘积 。
+ 题目数据 保证 数组 nums之中任意元素的全部前缀元素和后缀的乘积都在  32 位 整数范围内。
+ 请不要使用除法，且在 O(n) 时间复杂度内完成此题
+ 输入: nums = [1,2,3,4]
+ 输出:        [24,12,8,6]
+ */
+
+/***
+ 以前在做这个题的时候，老是搞不清楚边界的处理，看到别的题解说：先求下三角或者再求上三角之类的。今天正好借着【每日一题】系列，终于给搞懂了，不用管上三角或者下三角。见下图就知道了：
+
+ 原数组：       [1       2       3       4]
+ 左部分的乘积：   1       1      1*2    1*2*3
+ 右部分的乘积： 2*3*4    3*4      4      1
+ 结果：        1*2*3*4  1*3*4   1*2*4  1*2*3*1
+ 从上面的图可以看出，当前位置的结果就是它左部分的乘积再乘以它右部分的乘积。因此需要进行两次遍历，第一次遍历用于求左部分的乘积，第二次遍历在求右部分的乘积的同时，再将最后的计算结果一起求出来。
+ */
+
+class Hot100_19 {
+    func productExceptSelf(_ nums: [Int]) -> [Int] {
+        
+        var res = Array(repeating: 0, count: nums.count)
+        
+        var p = 1
+        var q = 1
+        
+        for i in 0..<nums.count{
+            res[i] = p
+            p *= nums[i]
+        }
+        for i in (0 ..< nums.count).reversed() {
+            res[i] *= q
+            q *= nums[i]
+        }
+
+        return res
+    
+    }
 }
