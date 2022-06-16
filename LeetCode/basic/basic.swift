@@ -63,9 +63,7 @@ func String_basic() {
     print(str[str.startIndex..<range.lowerBound])
     print(str[str.startIndex..<range.upperBound])
     
-    
-    
-    
+
     func insert(){
         var str = "ABCDEFGH"
         // 单个字符
