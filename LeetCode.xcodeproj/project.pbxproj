@@ -40,6 +40,7 @@
 		84D45ADA285B2110009E7D34 /* Fib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AD9285B2110009E7D34 /* Fib.swift */; };
 		84D45ADC285B2129009E7D34 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45ADB285B2129009E7D34 /* Combine.swift */; };
 		84D45ADE285B2154009E7D34 /* FindContentChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45ADD285B2154009E7D34 /* FindContentChildren.swift */; };
+		84D45AE4285C61A8009E7D34 /* GenerateMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AE3285C61A8009E7D34 /* GenerateMatrix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		84D45AD9285B2110009E7D34 /* Fib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fib.swift; sourceTree = "<group>"; };
 		84D45ADB285B2129009E7D34 /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
 		84D45ADD285B2154009E7D34 /* FindContentChildren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindContentChildren.swift; sourceTree = "<group>"; };
+		84D45AE3285C61A8009E7D34 /* GenerateMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMatrix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 				84D45A97285985F2009E7D34 /* RemoveElement.swift */,
 				84D45AC8285B1A6A009E7D34 /* SortedSquares.swift */,
 				84D45ACA285B1EB9009E7D34 /* MinSubArrayLen.swift */,
+				84D45AE3285C61A8009E7D34 /* GenerateMatrix.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				84D45AD6285B20C8009E7D34 /* MyQueue.swift in Sources */,
 				845E35ED284F5551005C3D92 /* HW.swift in Sources */,
 				84D45AD4285B20AE009E7D34 /* ReverseString.swift in Sources */,
+				84D45AE4285C61A8009E7D34 /* GenerateMatrix.swift in Sources */,
 				06E7003E219AB34A00ECBDAD /* AppDelegate.swift in Sources */,
 				84D45ACF285B1F35009E7D34 /* Define.swift in Sources */,
 				845E35D6284F5124005C3D92 /* LeetCodeSearch.swift in Sources */,
