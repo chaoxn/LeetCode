@@ -41,6 +41,12 @@
 		84D45ADC285B2129009E7D34 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45ADB285B2129009E7D34 /* Combine.swift */; };
 		84D45ADE285B2154009E7D34 /* FindContentChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45ADD285B2154009E7D34 /* FindContentChildren.swift */; };
 		84D45AE4285C61A8009E7D34 /* GenerateMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AE3285C61A8009E7D34 /* GenerateMatrix.swift */; };
+		84D45AE628604484009E7D34 /* SwapPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AE528604484009E7D34 /* SwapPairs.swift */; };
+		84D45AE82860494D009E7D34 /* RemoveNthFromEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AE72860494D009E7D34 /* RemoveNthFromEnd.swift */; };
+		84D45AEA28604B13009E7D34 /* DetectCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AE928604B13009E7D34 /* DetectCycle.swift */; };
+		84D45AEC28604F08009E7D34 /* Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AEB28604F08009E7D34 /* Intersection.swift */; };
+		84D45AEE28605195009E7D34 /* IsHappy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AED28605195009E7D34 /* IsHappy.swift */; };
+		84D45AF028605364009E7D34 /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AEF28605364009E7D34 /* Sum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +107,12 @@
 		84D45ADB285B2129009E7D34 /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
 		84D45ADD285B2154009E7D34 /* FindContentChildren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindContentChildren.swift; sourceTree = "<group>"; };
 		84D45AE3285C61A8009E7D34 /* GenerateMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMatrix.swift; sourceTree = "<group>"; };
+		84D45AE528604484009E7D34 /* SwapPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapPairs.swift; sourceTree = "<group>"; };
+		84D45AE72860494D009E7D34 /* RemoveNthFromEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveNthFromEnd.swift; sourceTree = "<group>"; };
+		84D45AE928604B13009E7D34 /* DetectCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectCycle.swift; sourceTree = "<group>"; };
+		84D45AEB28604F08009E7D34 /* Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intersection.swift; sourceTree = "<group>"; };
+		84D45AED28605195009E7D34 /* IsHappy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsHappy.swift; sourceTree = "<group>"; };
+		84D45AEF28605364009E7D34 /* Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +244,9 @@
 			isa = PBXGroup;
 			children = (
 				84D45ACC285B1F0F009E7D34 /* RemoveElements.swift */,
+				84D45AE528604484009E7D34 /* SwapPairs.swift */,
+				84D45AE72860494D009E7D34 /* RemoveNthFromEnd.swift */,
+				84D45AE928604B13009E7D34 /* DetectCycle.swift */,
 			);
 			path = Node;
 			sourceTree = "<group>";
@@ -240,6 +255,9 @@
 			isa = PBXGroup;
 			children = (
 				84D45AD0285B2084009E7D34 /* IsAnagram.swift */,
+				84D45AEB28604F08009E7D34 /* Intersection.swift */,
+				84D45AED28605195009E7D34 /* IsHappy.swift */,
+				84D45AEF28605364009E7D34 /* Sum.swift */,
 			);
 			path = HashMap;
 			sourceTree = "<group>";
@@ -441,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D45AE628604484009E7D34 /* SwapPairs.swift in Sources */,
 				845E35D4284F5124005C3D92 /* LeetCodeArray.swift in Sources */,
 				84D45ADE285B2154009E7D34 /* FindContentChildren.swift in Sources */,
 				84D45AC9285B1A6A009E7D34 /* SortedSquares.swift in Sources */,
@@ -452,6 +471,7 @@
 				84D45ADA285B2110009E7D34 /* Fib.swift in Sources */,
 				845E35E8284F5551005C3D92 /* Sort.swift in Sources */,
 				845E35DD284F52E2005C3D92 /* basic.swift in Sources */,
+				84D45AEC28604F08009E7D34 /* Intersection.swift in Sources */,
 				84D45AD8285B20F7009E7D34 /* Traversal.swift in Sources */,
 				845E35D8284F5124005C3D92 /* LeetCodeNode.swift in Sources */,
 				84D45ACB285B1EB9009E7D34 /* MinSubArrayLen.swift in Sources */,
@@ -461,13 +481,17 @@
 				84D45AE4285C61A8009E7D34 /* GenerateMatrix.swift in Sources */,
 				06E7003E219AB34A00ECBDAD /* AppDelegate.swift in Sources */,
 				84D45ACF285B1F35009E7D34 /* Define.swift in Sources */,
+				84D45AEA28604B13009E7D34 /* DetectCycle.swift in Sources */,
 				845E35D6284F5124005C3D92 /* LeetCodeSearch.swift in Sources */,
+				84D45AEE28605195009E7D34 /* IsHappy.swift in Sources */,
+				84D45AF028605364009E7D34 /* Sum.swift in Sources */,
 				84D45AD1285B2084009E7D34 /* IsAnagram.swift in Sources */,
 				845E35D7284F5124005C3D92 /* LeetCodeTreeNode.swift in Sources */,
 				845E35E9284F5551005C3D92 /* CodeTop.swift in Sources */,
 				84D45A9628598333009E7D34 /* Search.swift in Sources */,
 				84D45ACD285B1F0F009E7D34 /* RemoveElements.swift in Sources */,
 				84D45ADC285B2129009E7D34 /* Combine.swift in Sources */,
+				84D45AE82860494D009E7D34 /* RemoveNthFromEnd.swift in Sources */,
 				845E35EC284F5551005C3D92 /* BackTrack.swift in Sources */,
 				845E35D5284F5124005C3D92 /* LeetCodeString.swift in Sources */,
 			);
