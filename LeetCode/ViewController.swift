@@ -140,6 +140,12 @@ class ViewController: UIViewController {
         Hot100_6().canJump([0])
         Hot100_10().exist([["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]],"ABCB")
         Hot100_12().wordBreak("catsandog",["cats", "dog", "sand", "and", "cat"])
+        
+        
+        print("--------------------------------String---------------------------------------")
+        reverseWords_1(" Hello World ")
+        
+        
     }
 }
 

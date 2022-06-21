@@ -27,6 +27,9 @@
 		845E35EB284F5551005C3D92 /* DynamicEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E35E5284F5551005C3D92 /* DynamicEx.swift */; };
 		845E35EC284F5551005C3D92 /* BackTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E35E6284F5551005C3D92 /* BackTrack.swift */; };
 		845E35ED284F5551005C3D92 /* HW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E35E7284F5551005C3D92 /* HW.swift */; };
+		848C0077286171CB005FF4ED /* CanConstruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C0076286171CB005FF4ED /* CanConstruct.swift */; };
+		848C0079286194FB005FF4ED /* ReplaceSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C0078286194FB005FF4ED /* ReplaceSpace.swift */; };
+		848C007B28619F46005FF4ED /* StrStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C007A28619F46005FF4ED /* StrStr.swift */; };
 		84D45A9628598333009E7D34 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45A9528598333009E7D34 /* Search.swift */; };
 		84D45A98285985F2009E7D34 /* RemoveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45A97285985F2009E7D34 /* RemoveElement.swift */; };
 		84D45AC9285B1A6A009E7D34 /* SortedSquares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AC8285B1A6A009E7D34 /* SortedSquares.swift */; };
@@ -93,6 +96,9 @@
 		845E35E5284F5551005C3D92 /* DynamicEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicEx.swift; sourceTree = "<group>"; };
 		845E35E6284F5551005C3D92 /* BackTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTrack.swift; sourceTree = "<group>"; };
 		845E35E7284F5551005C3D92 /* HW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HW.swift; sourceTree = "<group>"; };
+		848C0076286171CB005FF4ED /* CanConstruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanConstruct.swift; sourceTree = "<group>"; };
+		848C0078286194FB005FF4ED /* ReplaceSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceSpace.swift; sourceTree = "<group>"; };
+		848C007A28619F46005FF4ED /* StrStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrStr.swift; sourceTree = "<group>"; };
 		84D45A9528598333009E7D34 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		84D45A97285985F2009E7D34 /* RemoveElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveElement.swift; sourceTree = "<group>"; };
 		84D45AC8285B1A6A009E7D34 /* SortedSquares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedSquares.swift; sourceTree = "<group>"; };
@@ -258,6 +264,7 @@
 				84D45AEB28604F08009E7D34 /* Intersection.swift */,
 				84D45AED28605195009E7D34 /* IsHappy.swift */,
 				84D45AEF28605364009E7D34 /* Sum.swift */,
+				848C0076286171CB005FF4ED /* CanConstruct.swift */,
 			);
 			path = HashMap;
 			sourceTree = "<group>";
@@ -324,6 +331,8 @@
 			isa = PBXGroup;
 			children = (
 				84D45AD3285B20AE009E7D34 /* ReverseString.swift */,
+				848C0078286194FB005FF4ED /* ReplaceSpace.swift */,
+				848C007A28619F46005FF4ED /* StrStr.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -474,6 +483,7 @@
 				84D45AEC28604F08009E7D34 /* Intersection.swift in Sources */,
 				84D45AD8285B20F7009E7D34 /* Traversal.swift in Sources */,
 				845E35D8284F5124005C3D92 /* LeetCodeNode.swift in Sources */,
+				848C007B28619F46005FF4ED /* StrStr.swift in Sources */,
 				84D45ACB285B1EB9009E7D34 /* MinSubArrayLen.swift in Sources */,
 				84D45AD6285B20C8009E7D34 /* MyQueue.swift in Sources */,
 				845E35ED284F5551005C3D92 /* HW.swift in Sources */,
@@ -483,6 +493,8 @@
 				84D45ACF285B1F35009E7D34 /* Define.swift in Sources */,
 				84D45AEA28604B13009E7D34 /* DetectCycle.swift in Sources */,
 				845E35D6284F5124005C3D92 /* LeetCodeSearch.swift in Sources */,
+				848C0079286194FB005FF4ED /* ReplaceSpace.swift in Sources */,
+				848C0077286171CB005FF4ED /* CanConstruct.swift in Sources */,
 				84D45AEE28605195009E7D34 /* IsHappy.swift in Sources */,
 				84D45AF028605364009E7D34 /* Sum.swift in Sources */,
 				84D45AD1285B2084009E7D34 /* IsAnagram.swift in Sources */,

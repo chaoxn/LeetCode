@@ -17,7 +17,6 @@ import UIKit
  82 + 22 = 68
  62 + 82 = 100
  12 + 02 + 02 = 1
-
  */
 func isHappy(_ n: Int) -> Bool {
     
