@@ -14,6 +14,10 @@
 		06E70048219AB35000ECBDAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E70046219AB35000ECBDAD /* LaunchScreen.storyboard */; };
 		06E70053219AB35100ECBDAD /* LeetCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E70052219AB35100ECBDAD /* LeetCodeTests.swift */; };
 		06E7005E219AB35100ECBDAD /* LeetCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E7005D219AB35100ECBDAD /* LeetCodeUITests.swift */; };
+		8415101B287582BD00DF7805 /* MyQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8415101A287582BD00DF7805 /* MyQueue.cpp */; };
+		8415101F28758B3500DF7805 /* MyStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8415101E28758B3500DF7805 /* MyStack.cpp */; };
+		8415102228758B6A00DF7805 /* isValid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8415102028758B6A00DF7805 /* isValid.cpp */; };
+		8415102528758FCF00DF7805 /* RemoveDuplicates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8415102428758FCF00DF7805 /* RemoveDuplicates.cpp */; };
 		845E35D4284F5124005C3D92 /* LeetCodeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E35CE284F5124005C3D92 /* LeetCodeArray.swift */; };
 		845E35D5284F5124005C3D92 /* LeetCodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E35CF284F5124005C3D92 /* LeetCodeString.swift */; };
 		845E35D6284F5124005C3D92 /* LeetCodeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E35D0284F5124005C3D92 /* LeetCodeSearch.swift */; };
@@ -40,7 +44,6 @@
 		84D45ACF285B1F35009E7D34 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45ACE285B1F35009E7D34 /* Define.swift */; };
 		84D45AD1285B2084009E7D34 /* IsAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AD0285B2084009E7D34 /* IsAnagram.swift */; };
 		84D45AD4285B20AE009E7D34 /* ReverseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AD3285B20AE009E7D34 /* ReverseString.swift */; };
-		84D45AD6285B20C8009E7D34 /* MyQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AD5285B20C8009E7D34 /* MyQueue.swift */; };
 		84D45AD8285B20F7009E7D34 /* Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AD7285B20F7009E7D34 /* Traversal.swift */; };
 		84D45ADA285B2110009E7D34 /* Fib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AD9285B2110009E7D34 /* Fib.swift */; };
 		84D45ADC285B2129009E7D34 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45ADB285B2129009E7D34 /* Combine.swift */; };
@@ -85,6 +88,11 @@
 		06E70059219AB35100ECBDAD /* LeetCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E7005D219AB35100ECBDAD /* LeetCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeUITests.swift; sourceTree = "<group>"; };
 		06E7005F219AB35100ECBDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8415101A287582BD00DF7805 /* MyQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyQueue.cpp; sourceTree = "<group>"; };
+		8415101E28758B3500DF7805 /* MyStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyStack.cpp; sourceTree = "<group>"; };
+		8415102028758B6A00DF7805 /* isValid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = isValid.cpp; sourceTree = "<group>"; };
+		8415102328758C5000DF7805 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		8415102428758FCF00DF7805 /* RemoveDuplicates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveDuplicates.cpp; sourceTree = "<group>"; };
 		845E35CE284F5124005C3D92 /* LeetCodeArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCodeArray.swift; sourceTree = "<group>"; };
 		845E35CF284F5124005C3D92 /* LeetCodeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCodeString.swift; sourceTree = "<group>"; };
 		845E35D0284F5124005C3D92 /* LeetCodeSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCodeSearch.swift; sourceTree = "<group>"; };
@@ -111,7 +119,6 @@
 		84D45ACE285B1F35009E7D34 /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		84D45AD0285B2084009E7D34 /* IsAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsAnagram.swift; sourceTree = "<group>"; };
 		84D45AD3285B20AE009E7D34 /* ReverseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseString.swift; sourceTree = "<group>"; };
-		84D45AD5285B20C8009E7D34 /* MyQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQueue.swift; sourceTree = "<group>"; };
 		84D45AD7285B20F7009E7D34 /* Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traversal.swift; sourceTree = "<group>"; };
 		84D45AD9285B2110009E7D34 /* Fib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fib.swift; sourceTree = "<group>"; };
 		84D45ADB285B2129009E7D34 /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
@@ -276,7 +283,10 @@
 		84D45A8E28598212009E7D34 /* Queue */ = {
 			isa = PBXGroup;
 			children = (
-				84D45AD5285B20C8009E7D34 /* MyQueue.swift */,
+				8415101A287582BD00DF7805 /* MyQueue.cpp */,
+				8415101E28758B3500DF7805 /* MyStack.cpp */,
+				8415102028758B6A00DF7805 /* isValid.cpp */,
+				8415102428758FCF00DF7805 /* RemoveDuplicates.cpp */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -329,6 +339,7 @@
 			children = (
 				845E35DC284F52E2005C3D92 /* basic.swift */,
 				84D45ACE285B1F35009E7D34 /* Define.swift */,
+				8415102328758C5000DF7805 /* Header.h */,
 			);
 			path = basic;
 			sourceTree = "<group>";
@@ -411,6 +422,7 @@
 				TargetAttributes = {
 					06E70039219AB34A00ECBDAD = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1320;
 					};
 					06E7004D219AB35100ECBDAD = {
 						CreatedOnToolsVersion = 10.0;
@@ -480,19 +492,21 @@
 				84D45AC9285B1A6A009E7D34 /* SortedSquares.swift in Sources */,
 				845E35D9284F5124005C3D92 /* LeetCodeVC.swift in Sources */,
 				84D45A98285985F2009E7D34 /* RemoveElement.swift in Sources */,
+				8415102528758FCF00DF7805 /* RemoveDuplicates.cpp in Sources */,
 				06E70040219AB34A00ECBDAD /* ViewController.swift in Sources */,
 				845E35EA284F5551005C3D92 /* Hot100.swift in Sources */,
 				848C0082286548D1005FF4ED /* LargestValues.swift in Sources */,
 				845E35EB284F5551005C3D92 /* DynamicEx.swift in Sources */,
 				84D45ADA285B2110009E7D34 /* Fib.swift in Sources */,
 				845E35E8284F5551005C3D92 /* Sort.swift in Sources */,
+				8415102228758B6A00DF7805 /* isValid.cpp in Sources */,
 				845E35DD284F52E2005C3D92 /* basic.swift in Sources */,
 				84D45AEC28604F08009E7D34 /* Intersection.swift in Sources */,
 				84D45AD8285B20F7009E7D34 /* Traversal.swift in Sources */,
+				8415101F28758B3500DF7805 /* MyStack.cpp in Sources */,
 				845E35D8284F5124005C3D92 /* LeetCodeNode.swift in Sources */,
 				848C007B28619F46005FF4ED /* StrStr.swift in Sources */,
 				84D45ACB285B1EB9009E7D34 /* MinSubArrayLen.swift in Sources */,
-				84D45AD6285B20C8009E7D34 /* MyQueue.swift in Sources */,
 				845E35ED284F5551005C3D92 /* HW.swift in Sources */,
 				848C00802862A97E005FF4ED /* FindBottomLeftValue.swift in Sources */,
 				84D45AD4285B20AE009E7D34 /* ReverseString.swift in Sources */,
@@ -500,6 +514,7 @@
 				06E7003E219AB34A00ECBDAD /* AppDelegate.swift in Sources */,
 				84D45ACF285B1F35009E7D34 /* Define.swift in Sources */,
 				84D45AEA28604B13009E7D34 /* DetectCycle.swift in Sources */,
+				8415101B287582BD00DF7805 /* MyQueue.cpp in Sources */,
 				845E35D6284F5124005C3D92 /* LeetCodeSearch.swift in Sources */,
 				848C0079286194FB005FF4ED /* ReplaceSpace.swift in Sources */,
 				848C0077286171CB005FF4ED /* CanConstruct.swift in Sources */,
@@ -688,14 +703,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LeetCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ios.LeetCode;
+				PRODUCT_BUNDLE_IDENTIFIER = chaox.Leetcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SHARED_PRECOMPS_DIR = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -705,14 +728,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LeetCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ios.LeetCode;
+				PRODUCT_BUNDLE_IDENTIFIER = chaox.Leetcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SHARED_PRECOMPS_DIR = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
