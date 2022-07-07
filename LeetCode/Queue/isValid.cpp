@@ -8,6 +8,7 @@
 
 #include "Header.h"
 
+//20有效括号
 class Solution {
 public:
     bool isValid(string s) {

@@ -12,6 +12,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <stack>
+#include <vector>
+
 using namespace std;
 
 #endif /* Header_h */
