@@ -19,6 +19,12 @@
 		8415102228758B6A00DF7805 /* isValid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8415102028758B6A00DF7805 /* isValid.cpp */; };
 		8415102528758FCF00DF7805 /* RemoveDuplicates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8415102428758FCF00DF7805 /* RemoveDuplicates.cpp */; };
 		841510272876C21F00DF7805 /* EvalRPN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841510262876C21F00DF7805 /* EvalRPN.cpp */; };
+		84151029287C179900DF7805 /* Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84151028287C179900DF7805 /* Traversal.cpp */; };
+		8415102B287C1AB500DF7805 /* LevelOrder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8415102A287C1AB500DF7805 /* LevelOrder.cpp */; };
+		84151031287D11EA00DF7805 /* CppStudy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84151030287D11EA00DF7805 /* CppStudy.cpp */; };
+		84151034287D1DB500DF7805 /* STL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84151032287D1DB500DF7805 /* STL.cpp */; };
+		8415103C287D1EC800DF7805 /* BridgeFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8415103B287D1EC800DF7805 /* BridgeFile.mm */; };
+		84151041287D5C5100DF7805 /* OddCells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84151040287D5C5100DF7805 /* OddCells.cpp */; };
 		845E35D4284F5124005C3D92 /* LeetCodeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E35CE284F5124005C3D92 /* LeetCodeArray.swift */; };
 		845E35D5284F5124005C3D92 /* LeetCodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E35CF284F5124005C3D92 /* LeetCodeString.swift */; };
 		845E35D6284F5124005C3D92 /* LeetCodeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E35D0284F5124005C3D92 /* LeetCodeSearch.swift */; };
@@ -95,6 +101,15 @@
 		8415102328758C5000DF7805 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		8415102428758FCF00DF7805 /* RemoveDuplicates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveDuplicates.cpp; sourceTree = "<group>"; };
 		841510262876C21F00DF7805 /* EvalRPN.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EvalRPN.cpp; sourceTree = "<group>"; };
+		84151028287C179900DF7805 /* Traversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Traversal.cpp; sourceTree = "<group>"; };
+		8415102A287C1AB500DF7805 /* LevelOrder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LevelOrder.cpp; sourceTree = "<group>"; };
+		84151030287D11EA00DF7805 /* CppStudy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppStudy.cpp; sourceTree = "<group>"; };
+		84151032287D1DB500DF7805 /* STL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STL.cpp; sourceTree = "<group>"; };
+		84151033287D1DB500DF7805 /* STL.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = STL.hpp; sourceTree = "<group>"; };
+		8415103A287D1EC800DF7805 /* BridgeFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeFile.h; sourceTree = "<group>"; };
+		8415103B287D1EC800DF7805 /* BridgeFile.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BridgeFile.mm; sourceTree = "<group>"; };
+		8415103F287D240F00DF7805 /* OCBridgeSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCBridgeSwift.h; sourceTree = SOURCE_ROOT; };
+		84151040287D5C5100DF7805 /* OddCells.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OddCells.cpp; sourceTree = "<group>"; };
 		845E35CE284F5124005C3D92 /* LeetCodeArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCodeArray.swift; sourceTree = "<group>"; };
 		845E35CF284F5124005C3D92 /* LeetCodeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCodeString.swift; sourceTree = "<group>"; };
 		845E35D0284F5124005C3D92 /* LeetCodeSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCodeSearch.swift; sourceTree = "<group>"; };
@@ -255,6 +270,7 @@
 				84D45AC8285B1A6A009E7D34 /* SortedSquares.swift */,
 				84D45ACA285B1EB9009E7D34 /* MinSubArrayLen.swift */,
 				84D45AE3285C61A8009E7D34 /* GenerateMatrix.swift */,
+				84151040287D5C5100DF7805 /* OddCells.cpp */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -300,6 +316,8 @@
 				84D45AD7285B20F7009E7D34 /* Traversal.swift */,
 				848C007F2862A97E005FF4ED /* FindBottomLeftValue.swift */,
 				848C0081286548D1005FF4ED /* LargestValues.swift */,
+				84151028287C179900DF7805 /* Traversal.cpp */,
+				8415102A287C1AB500DF7805 /* LevelOrder.cpp */,
 			);
 			path = TreeNode;
 			sourceTree = "<group>";
@@ -342,7 +360,13 @@
 			children = (
 				845E35DC284F52E2005C3D92 /* basic.swift */,
 				84D45ACE285B1F35009E7D34 /* Define.swift */,
+				8415103A287D1EC800DF7805 /* BridgeFile.h */,
+				8415103B287D1EC800DF7805 /* BridgeFile.mm */,
+				8415103F287D240F00DF7805 /* OCBridgeSwift.h */,
+				84151033287D1DB500DF7805 /* STL.hpp */,
+				84151032287D1DB500DF7805 /* STL.cpp */,
 				8415102328758C5000DF7805 /* Header.h */,
+				84151030287D11EA00DF7805 /* CppStudy.cpp */,
 			);
 			path = basic;
 			sourceTree = "<group>";
@@ -502,9 +526,12 @@
 				845E35EB284F5551005C3D92 /* DynamicEx.swift in Sources */,
 				84D45ADA285B2110009E7D34 /* Fib.swift in Sources */,
 				841510272876C21F00DF7805 /* EvalRPN.cpp in Sources */,
+				84151041287D5C5100DF7805 /* OddCells.cpp in Sources */,
 				845E35E8284F5551005C3D92 /* Sort.swift in Sources */,
 				8415102228758B6A00DF7805 /* isValid.cpp in Sources */,
 				845E35DD284F52E2005C3D92 /* basic.swift in Sources */,
+				84151029287C179900DF7805 /* Traversal.cpp in Sources */,
+				8415102B287C1AB500DF7805 /* LevelOrder.cpp in Sources */,
 				84D45AEC28604F08009E7D34 /* Intersection.swift in Sources */,
 				84D45AD8285B20F7009E7D34 /* Traversal.swift in Sources */,
 				8415101F28758B3500DF7805 /* MyStack.cpp in Sources */,
@@ -526,7 +553,10 @@
 				84D45AF028605364009E7D34 /* Sum.swift in Sources */,
 				84D45AD1285B2084009E7D34 /* IsAnagram.swift in Sources */,
 				845E35D7284F5124005C3D92 /* LeetCodeTreeNode.swift in Sources */,
+				84151034287D1DB500DF7805 /* STL.cpp in Sources */,
 				845E35E9284F5551005C3D92 /* CodeTop.swift in Sources */,
+				84151031287D11EA00DF7805 /* CppStudy.cpp in Sources */,
+				8415103C287D1EC800DF7805 /* BridgeFile.mm in Sources */,
 				84D45A9628598333009E7D34 /* Search.swift in Sources */,
 				84D45ACD285B1F0F009E7D34 /* RemoveElements.swift in Sources */,
 				84D45ADC285B2129009E7D34 /* Combine.swift in Sources */,
@@ -720,7 +750,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SHARED_PRECOMPS_DIR = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = OCBridgeSwift.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.2;
@@ -745,7 +775,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SHARED_PRECOMPS_DIR = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = OCBridgeSwift.h;
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

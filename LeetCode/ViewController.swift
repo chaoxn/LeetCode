@@ -146,6 +146,7 @@ class ViewController: UIViewController {
         reverseWords_1(" Hello World ")
         
         
+        BridgeFile().testCpp()
     }
 }
 
