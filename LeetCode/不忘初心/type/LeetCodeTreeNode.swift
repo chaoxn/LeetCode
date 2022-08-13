@@ -744,7 +744,6 @@ func pathSum(_ root: TreeNode?, _ target: Int) -> [[Int]] {
     
     var res = [[Int]]()
     var track = [Int]()
-    backtrack123(root, target)
     
     func backtrack123(_ root:TreeNode?, _ sum: Int){
         
@@ -771,6 +770,7 @@ func pathSum(_ root: TreeNode?, _ target: Int) -> [[Int]] {
         track.removeLast()
     }
     
+    backtrack123(root, target)
     
     return res
 }
@@ -779,7 +779,6 @@ func pathSum(_ root: TreeNode?, _ target: Int) -> [[Int]] {
 func kthLargest(_ root: TreeNode?, _ k: Int) -> Int {
 
     var res = [Int]()
-    recur(root, &res)
     
     func recur(_ root: TreeNode?, _ res: inout [Int]){
         
@@ -789,6 +788,8 @@ func kthLargest(_ root: TreeNode?, _ k: Int) -> Int {
         recur(root?.right, &res)
         res.append(root!.val)
     }
+    
+    recur(root, &res)
     
     return res[res.count - k]
 }

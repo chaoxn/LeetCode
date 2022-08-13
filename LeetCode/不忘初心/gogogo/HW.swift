@@ -8,7 +8,6 @@ import UIKit
 
 func hjTest(){
     let str = readLine() ?? "abc"
-    pivotEight(str)
 
     func pivotEight(_ str: String?){
         
@@ -32,6 +31,9 @@ func hjTest(){
             temp.removeFirst(8)
         }
     }
+    
+    pivotEight(str)
+
     
     let input = "aabcddd"
     

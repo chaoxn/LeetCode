@@ -311,7 +311,6 @@ func subsets1(_ nums: [Int]) -> [[Int]] {
     //track 记录每次的回溯路径 也就是每个子集.
     var res = [[Int]]()
     var track = [Int]()
-    backTrack(0, &track)
     func backTrack(_ start: Int, _ track: inout [Int]){
             
         res.append(track)
@@ -321,6 +320,10 @@ func subsets1(_ nums: [Int]) -> [[Int]] {
             track.removeLast()
         }
     }
+        
+    backTrack(0, &track)
+
+    
     return res
 }
 
@@ -330,7 +333,7 @@ func combine(_ n: Int, _ k: Int) -> [[Int]] {
     //track 记录每次的回溯路径 也就是每个子集.
     var res = [[Int]]()
     var track = [Int]()
-    backtrack(1,n,k,&track)
+
     //start 默认1开始
     //n 截止到n
     //k 个数
@@ -346,6 +349,8 @@ func combine(_ n: Int, _ k: Int) -> [[Int]] {
             track.removeLast()
         }
     }
+    
+    backtrack(1,n,k,&track)
     
     return res
 }

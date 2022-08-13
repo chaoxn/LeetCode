@@ -22,6 +22,8 @@ void STL::Array(){
 
 }
 
+
+
 void STL::Vector(){
     
     cout << "--------- vector begin ---------" << endl;
@@ -50,6 +52,19 @@ void STL::Vector(){
     a.erase(a.begin()+2);  //删除指定元素
     a.pop_back(); //删除最后一个
     a.clear();    //清空元素
+    
+//    vector<int> nums = {0,0,1,1,1,2,2,3,3,4};
+//    int slow = 0;
+//    int fast = 0;
+//    
+//    while (fast < nums.size() - 1) {
+//        if (nums[fast] != nums[fast + 1]) {
+//            nums[fast] = nums[fast+1];
+//            slow += 1;
+//        }
+//        fast += 1;
+//    }
+    
     
 }
 
@@ -126,4 +141,5 @@ void STL::practise(){
     cin >> size;
     int *sizeArray = new int[size];
     vector<int> sizeArray1(size);
+
 }

@@ -62,6 +62,12 @@
 		84D45AEC28604F08009E7D34 /* Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AEB28604F08009E7D34 /* Intersection.swift */; };
 		84D45AEE28605195009E7D34 /* IsHappy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AED28605195009E7D34 /* IsHappy.swift */; };
 		84D45AF028605364009E7D34 /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AEF28605364009E7D34 /* Sum.swift */; };
+		94AFEC6328A77A5E0063BD02 /* TwoSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6228A77A5E0063BD02 /* TwoSum.cpp */; };
+		94AFEC6628A781050063BD02 /* RemoveDuplicates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6428A781050063BD02 /* RemoveDuplicates.cpp */; };
+		94AFEC6828A788150063BD02 /* RemoveElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6728A788150063BD02 /* RemoveElement.cpp */; };
+		94AFEC6A28A78DDA0063BD02 /* MoveZero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6928A78DDA0063BD02 /* MoveZero.cpp */; };
+		94AFEC6C28A790880063BD02 /* TwoSum_JO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6B28A790880063BD02 /* TwoSum_JO.cpp */; };
+		94AFEC6E28A792490063BD02 /* SumRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6D28A792490063BD02 /* SumRange.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +153,12 @@
 		84D45AEB28604F08009E7D34 /* Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intersection.swift; sourceTree = "<group>"; };
 		84D45AED28605195009E7D34 /* IsHappy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsHappy.swift; sourceTree = "<group>"; };
 		84D45AEF28605364009E7D34 /* Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sum.swift; sourceTree = "<group>"; };
+		94AFEC6228A77A5E0063BD02 /* TwoSum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoSum.cpp; sourceTree = "<group>"; };
+		94AFEC6428A781050063BD02 /* RemoveDuplicates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveDuplicates.cpp; sourceTree = "<group>"; };
+		94AFEC6728A788150063BD02 /* RemoveElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveElement.cpp; sourceTree = "<group>"; };
+		94AFEC6928A78DDA0063BD02 /* MoveZero.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MoveZero.cpp; sourceTree = "<group>"; };
+		94AFEC6B28A790880063BD02 /* TwoSum_JO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoSum_JO.cpp; sourceTree = "<group>"; };
+		94AFEC6D28A792490063BD02 /* SumRange.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SumRange.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +283,12 @@
 				84D45ACA285B1EB9009E7D34 /* MinSubArrayLen.swift */,
 				84D45AE3285C61A8009E7D34 /* GenerateMatrix.swift */,
 				84151040287D5C5100DF7805 /* OddCells.cpp */,
+				94AFEC6228A77A5E0063BD02 /* TwoSum.cpp */,
+				94AFEC6428A781050063BD02 /* RemoveDuplicates.cpp */,
+				94AFEC6728A788150063BD02 /* RemoveElement.cpp */,
+				94AFEC6928A78DDA0063BD02 /* MoveZero.cpp */,
+				94AFEC6B28A790880063BD02 /* TwoSum_JO.cpp */,
+				94AFEC6D28A792490063BD02 /* SumRange.cpp */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -520,10 +538,12 @@
 				845E35D9284F5124005C3D92 /* LeetCodeVC.swift in Sources */,
 				84D45A98285985F2009E7D34 /* RemoveElement.swift in Sources */,
 				8415102528758FCF00DF7805 /* RemoveDuplicates.cpp in Sources */,
+				94AFEC6E28A792490063BD02 /* SumRange.cpp in Sources */,
 				06E70040219AB34A00ECBDAD /* ViewController.swift in Sources */,
 				845E35EA284F5551005C3D92 /* Hot100.swift in Sources */,
 				848C0082286548D1005FF4ED /* LargestValues.swift in Sources */,
 				845E35EB284F5551005C3D92 /* DynamicEx.swift in Sources */,
+				94AFEC6828A788150063BD02 /* RemoveElement.cpp in Sources */,
 				84D45ADA285B2110009E7D34 /* Fib.swift in Sources */,
 				841510272876C21F00DF7805 /* EvalRPN.cpp in Sources */,
 				84151041287D5C5100DF7805 /* OddCells.cpp in Sources */,
@@ -542,8 +562,10 @@
 				848C00802862A97E005FF4ED /* FindBottomLeftValue.swift in Sources */,
 				84D45AD4285B20AE009E7D34 /* ReverseString.swift in Sources */,
 				84D45AE4285C61A8009E7D34 /* GenerateMatrix.swift in Sources */,
+				94AFEC6628A781050063BD02 /* RemoveDuplicates.cpp in Sources */,
 				06E7003E219AB34A00ECBDAD /* AppDelegate.swift in Sources */,
 				84D45ACF285B1F35009E7D34 /* Define.swift in Sources */,
+				94AFEC6328A77A5E0063BD02 /* TwoSum.cpp in Sources */,
 				84D45AEA28604B13009E7D34 /* DetectCycle.swift in Sources */,
 				8415101B287582BD00DF7805 /* MyQueue.cpp in Sources */,
 				845E35D6284F5124005C3D92 /* LeetCodeSearch.swift in Sources */,
@@ -556,11 +578,13 @@
 				84151034287D1DB500DF7805 /* STL.cpp in Sources */,
 				845E35E9284F5551005C3D92 /* CodeTop.swift in Sources */,
 				84151031287D11EA00DF7805 /* CppStudy.cpp in Sources */,
+				94AFEC6A28A78DDA0063BD02 /* MoveZero.cpp in Sources */,
 				8415103C287D1EC800DF7805 /* BridgeFile.mm in Sources */,
 				84D45A9628598333009E7D34 /* Search.swift in Sources */,
 				84D45ACD285B1F0F009E7D34 /* RemoveElements.swift in Sources */,
 				84D45ADC285B2129009E7D34 /* Combine.swift in Sources */,
 				84D45AE82860494D009E7D34 /* RemoveNthFromEnd.swift in Sources */,
+				94AFEC6C28A790880063BD02 /* TwoSum_JO.cpp in Sources */,
 				845E35EC284F5551005C3D92 /* BackTrack.swift in Sources */,
 				845E35D5284F5124005C3D92 /* LeetCodeString.swift in Sources */,
 			);

@@ -136,7 +136,6 @@ class Solution_B4 {
         //track 记录每次的回溯路径 也就是每个子集.
         var res = [[Int]]()
         var track = [Int]()
-        backtrack(1,n,k,&track)
         //start 默认1开始
         //n 截止到n
         //k 个数
@@ -152,7 +151,9 @@ class Solution_B4 {
                 track.removeLast()
             }
         }
-        
+                
+        backtrack(1,n,k,&track)
+
         return res
     }
 }
