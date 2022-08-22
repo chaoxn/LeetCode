@@ -68,6 +68,9 @@
 		94AFEC6A28A78DDA0063BD02 /* MoveZero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6928A78DDA0063BD02 /* MoveZero.cpp */; };
 		94AFEC6C28A790880063BD02 /* TwoSum_JO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6B28A790880063BD02 /* TwoSum_JO.cpp */; };
 		94AFEC6E28A792490063BD02 /* SumRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6D28A792490063BD02 /* SumRange.cpp */; };
+		94AFEC7028A7991B0063BD02 /* ReverseWords.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6F28A7991B0063BD02 /* ReverseWords.cpp */; };
+		94AFEC7228A7999D0063BD02 /* Rotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC7128A7999D0063BD02 /* Rotate.cpp */; };
+		94AFEC7428B3D68B0063BD02 /* MaxDepth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC7328B3D68B0063BD02 /* MaxDepth.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +162,9 @@
 		94AFEC6928A78DDA0063BD02 /* MoveZero.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MoveZero.cpp; sourceTree = "<group>"; };
 		94AFEC6B28A790880063BD02 /* TwoSum_JO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoSum_JO.cpp; sourceTree = "<group>"; };
 		94AFEC6D28A792490063BD02 /* SumRange.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SumRange.cpp; sourceTree = "<group>"; };
+		94AFEC6F28A7991B0063BD02 /* ReverseWords.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ReverseWords.cpp; sourceTree = "<group>"; };
+		94AFEC7128A7999D0063BD02 /* Rotate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rotate.cpp; sourceTree = "<group>"; };
+		94AFEC7328B3D68B0063BD02 /* MaxDepth.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaxDepth.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +295,8 @@
 				94AFEC6928A78DDA0063BD02 /* MoveZero.cpp */,
 				94AFEC6B28A790880063BD02 /* TwoSum_JO.cpp */,
 				94AFEC6D28A792490063BD02 /* SumRange.cpp */,
+				94AFEC6F28A7991B0063BD02 /* ReverseWords.cpp */,
+				94AFEC7128A7999D0063BD02 /* Rotate.cpp */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -336,6 +344,7 @@
 				848C0081286548D1005FF4ED /* LargestValues.swift */,
 				84151028287C179900DF7805 /* Traversal.cpp */,
 				8415102A287C1AB500DF7805 /* LevelOrder.cpp */,
+				94AFEC7328B3D68B0063BD02 /* MaxDepth.cpp */,
 			);
 			path = TreeNode;
 			sourceTree = "<group>";
@@ -531,7 +540,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94AFEC7428B3D68B0063BD02 /* MaxDepth.cpp in Sources */,
 				84D45AE628604484009E7D34 /* SwapPairs.swift in Sources */,
+				94AFEC7028A7991B0063BD02 /* ReverseWords.cpp in Sources */,
 				845E35D4284F5124005C3D92 /* LeetCodeArray.swift in Sources */,
 				84D45ADE285B2154009E7D34 /* FindContentChildren.swift in Sources */,
 				84D45AC9285B1A6A009E7D34 /* SortedSquares.swift in Sources */,
@@ -576,6 +587,7 @@
 				84D45AD1285B2084009E7D34 /* IsAnagram.swift in Sources */,
 				845E35D7284F5124005C3D92 /* LeetCodeTreeNode.swift in Sources */,
 				84151034287D1DB500DF7805 /* STL.cpp in Sources */,
+				94AFEC7228A7999D0063BD02 /* Rotate.cpp in Sources */,
 				845E35E9284F5551005C3D92 /* CodeTop.swift in Sources */,
 				84151031287D11EA00DF7805 /* CppStudy.cpp in Sources */,
 				94AFEC6A28A78DDA0063BD02 /* MoveZero.cpp in Sources */,
