@@ -110,6 +110,7 @@ public:
         return res;
     }
     
+    //116. 填充每个节点的下一个右侧节点指针
     Node* connect(Node* root) {
         queue<Node*> que;
         if (root != NULL) que.push(root);
@@ -136,4 +137,35 @@ public:
         }
         return root;
     }
+    
+    //116. 填充每个节点的下一个右侧节点指针
+    Node* connect1(Node* root) {
+        queue<Node*> que;
+        if (root != nullptr) que.push(root);
+        while (!que.empty()) {
+            vector<Node*> levelVec;
+            //不要直接用 大小是不停变化的
+            int size = que.size();
+            for (int i = 0; i < size; i++) {
+                
+                Node* node = que.front();
+                que.pop();
+                if (node->left) que.push(node->left);
+                if (node->right) que.push(node->right);
+                levelVec.push_back(node);
+            }
+            for (int i = 0; i < levelVec.size(); i++) {
+                Node *temp = levelVec[i];
+                if (i < levelVec.size() - 1) {
+                    temp->next = levelVec[i+1];
+                }
+                if (i == levelVec.size() - 1) {
+                    temp->next = nullptr;
+                }
+            }
+        }
+        return root;
+    }
+
+    
 };

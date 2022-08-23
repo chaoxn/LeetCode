@@ -71,6 +71,7 @@
 		94AFEC7028A7991B0063BD02 /* ReverseWords.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6F28A7991B0063BD02 /* ReverseWords.cpp */; };
 		94AFEC7228A7999D0063BD02 /* Rotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC7128A7999D0063BD02 /* Rotate.cpp */; };
 		94AFEC7428B3D68B0063BD02 /* MaxDepth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC7328B3D68B0063BD02 /* MaxDepth.cpp */; };
+		94AFEC7628B5224F0063BD02 /* InvertTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC7528B5224F0063BD02 /* InvertTree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,7 @@
 		94AFEC6F28A7991B0063BD02 /* ReverseWords.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ReverseWords.cpp; sourceTree = "<group>"; };
 		94AFEC7128A7999D0063BD02 /* Rotate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rotate.cpp; sourceTree = "<group>"; };
 		94AFEC7328B3D68B0063BD02 /* MaxDepth.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaxDepth.cpp; sourceTree = "<group>"; };
+		94AFEC7528B5224F0063BD02 /* InvertTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InvertTree.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +347,7 @@
 				84151028287C179900DF7805 /* Traversal.cpp */,
 				8415102A287C1AB500DF7805 /* LevelOrder.cpp */,
 				94AFEC7328B3D68B0063BD02 /* MaxDepth.cpp */,
+				94AFEC7528B5224F0063BD02 /* InvertTree.cpp */,
 			);
 			path = TreeNode;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 				841510272876C21F00DF7805 /* EvalRPN.cpp in Sources */,
 				84151041287D5C5100DF7805 /* OddCells.cpp in Sources */,
 				845E35E8284F5551005C3D92 /* Sort.swift in Sources */,
+				94AFEC7628B5224F0063BD02 /* InvertTree.cpp in Sources */,
 				8415102228758B6A00DF7805 /* isValid.cpp in Sources */,
 				845E35DD284F52E2005C3D92 /* basic.swift in Sources */,
 				84151029287C179900DF7805 /* Traversal.cpp in Sources */,
