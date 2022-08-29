@@ -29,7 +29,29 @@ void STL::Vector(){
     cout << "--------- vector begin ---------" << endl;
 
     //vector
-//    int t[7]={1,2,3,4,5,9,8};
+    vector<int> nums = {1,2,3,4,5,9,8,7};
+    int n = 8;
+    
+    vector<int> res;
+    vector<int> array1;
+    vector<int> array2;
+    
+    //截成两半
+    vector<int>::const_iterator first = nums.begin();
+    vector<int>::const_iterator second = nums.begin() + n/2;
+    
+    array1.assign(first, second);
+    
+    vector<int>::const_iterator first1 = nums.begin() + n/2;
+    vector<int>::const_iterator second1 = nums.end();
+    array2.assign(first1, second1);
+    
+    int i = 0;
+    
+    while (i < n/2) {
+        res.push_back(array1[i]);
+        res.push_back(array1[2]);
+    }
     
     ///构造函数
     vector<int> a;
@@ -56,7 +78,7 @@ void STL::Vector(){
 //    vector<int> nums = {0,0,1,1,1,2,2,3,3,4};
 //    int slow = 0;
 //    int fast = 0;
-//    
+//
 //    while (fast < nums.size() - 1) {
 //        if (nums[fast] != nums[fast + 1]) {
 //            nums[fast] = nums[fast+1];

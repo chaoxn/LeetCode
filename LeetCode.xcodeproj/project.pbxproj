@@ -72,6 +72,7 @@
 		94AFEC7228A7999D0063BD02 /* Rotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC7128A7999D0063BD02 /* Rotate.cpp */; };
 		94AFEC7428B3D68B0063BD02 /* MaxDepth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC7328B3D68B0063BD02 /* MaxDepth.cpp */; };
 		94AFEC7628B5224F0063BD02 /* InvertTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC7528B5224F0063BD02 /* InvertTree.cpp */; };
+		94AFEC7828BD08730063BD02 /* Shuffle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC7728BD08730063BD02 /* Shuffle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +168,7 @@
 		94AFEC7128A7999D0063BD02 /* Rotate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rotate.cpp; sourceTree = "<group>"; };
 		94AFEC7328B3D68B0063BD02 /* MaxDepth.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaxDepth.cpp; sourceTree = "<group>"; };
 		94AFEC7528B5224F0063BD02 /* InvertTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InvertTree.cpp; sourceTree = "<group>"; };
+		94AFEC7728BD08730063BD02 /* Shuffle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shuffle.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +301,7 @@
 				94AFEC6D28A792490063BD02 /* SumRange.cpp */,
 				94AFEC6F28A7991B0063BD02 /* ReverseWords.cpp */,
 				94AFEC7128A7999D0063BD02 /* Rotate.cpp */,
+				94AFEC7728BD08730063BD02 /* Shuffle.cpp */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -597,6 +600,7 @@
 				94AFEC6A28A78DDA0063BD02 /* MoveZero.cpp in Sources */,
 				8415103C287D1EC800DF7805 /* BridgeFile.mm in Sources */,
 				84D45A9628598333009E7D34 /* Search.swift in Sources */,
+				94AFEC7828BD08730063BD02 /* Shuffle.cpp in Sources */,
 				84D45ACD285B1F0F009E7D34 /* RemoveElements.swift in Sources */,
 				84D45ADC285B2129009E7D34 /* Combine.swift in Sources */,
 				84D45AE82860494D009E7D34 /* RemoveNthFromEnd.swift in Sources */,
