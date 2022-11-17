@@ -10,12 +10,14 @@
 #define STL_hpp
 
 #include <iostream>
-
+#include "Header.h"
 class STL {
 public:
     void Vector();
     void Array();
     void practise();
+    int countStudents(vector<int>& students, vector<int>& sandwiches);
+
 };
 
 #endif /* STL_hpp */

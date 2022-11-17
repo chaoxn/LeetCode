@@ -9,13 +9,16 @@
 #import "BridgeFile.h"
 #import "STL.hpp"
 #import <memory>
-
+#include "Header.h"
 @implementation BridgeFile
 
 -(void)testCpp{
     auto sp = std::make_shared<STL>();
     sp->Vector();
     sp->Array();
+    vector<int> vc1 = {1,1,0,0};
+    vector<int> vc2 = {0,1,0,1};
+    int c = sp->countStudents(vc1, vc2);
 }
 
 @end
