@@ -17,6 +17,7 @@ public:
     void Array();
     void practise();
     int countStudents(vector<int>& students, vector<int>& sandwiches);
+    bool isSubseq(string s, string sub);
 
 };
 

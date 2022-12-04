@@ -64,6 +64,10 @@
 		84D45AF028605364009E7D34 /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45AEF28605364009E7D34 /* Sum.swift */; };
 		9481BE5A29003652006F15B5 /* CountStudents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE5929003652006F15B5 /* CountStudents.cpp */; };
 		9481BE5C29267CEB006F15B5 /* NumMatchingSubseq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE5B29267CEB006F15B5 /* NumMatchingSubseq.cpp */; };
+		9481BE5E293AE85A006F15B5 /* SecondHighest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE5D293AE85A006F15B5 /* SecondHighest.cpp */; };
+		9481BE60293AF881006F15B5 /* CheckTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE5F293AF881006F15B5 /* CheckTree.cpp */; };
+		9481BE62293AFAD6006F15B5 /* SubrectangleQueries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE61293AFAD6006F15B5 /* SubrectangleQueries.cpp */; };
+		9481BE64293C3916006F15B5 /* ClosestCost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE63293C3916006F15B5 /* ClosestCost.cpp */; };
 		94AFEC6328A77A5E0063BD02 /* TwoSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6228A77A5E0063BD02 /* TwoSum.cpp */; };
 		94AFEC6628A781050063BD02 /* RemoveDuplicates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6428A781050063BD02 /* RemoveDuplicates.cpp */; };
 		94AFEC6828A788150063BD02 /* RemoveElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6728A788150063BD02 /* RemoveElement.cpp */; };
@@ -162,6 +166,10 @@
 		84D45AEF28605364009E7D34 /* Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sum.swift; sourceTree = "<group>"; };
 		9481BE5929003652006F15B5 /* CountStudents.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CountStudents.cpp; sourceTree = "<group>"; };
 		9481BE5B29267CEB006F15B5 /* NumMatchingSubseq.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NumMatchingSubseq.cpp; sourceTree = "<group>"; };
+		9481BE5D293AE85A006F15B5 /* SecondHighest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SecondHighest.cpp; sourceTree = "<group>"; };
+		9481BE5F293AF881006F15B5 /* CheckTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CheckTree.cpp; sourceTree = "<group>"; };
+		9481BE61293AFAD6006F15B5 /* SubrectangleQueries.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SubrectangleQueries.cpp; sourceTree = "<group>"; };
+		9481BE63293C3916006F15B5 /* ClosestCost.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClosestCost.cpp; sourceTree = "<group>"; };
 		94AFEC6228A77A5E0063BD02 /* TwoSum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoSum.cpp; sourceTree = "<group>"; };
 		94AFEC6428A781050063BD02 /* RemoveDuplicates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveDuplicates.cpp; sourceTree = "<group>"; };
 		94AFEC6728A788150063BD02 /* RemoveElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveElement.cpp; sourceTree = "<group>"; };
@@ -308,6 +316,8 @@
 				94AFEC7728BD08730063BD02 /* Shuffle.cpp */,
 				9481BE5929003652006F15B5 /* CountStudents.cpp */,
 				9481BE5B29267CEB006F15B5 /* NumMatchingSubseq.cpp */,
+				9481BE61293AFAD6006F15B5 /* SubrectangleQueries.cpp */,
+				9481BE63293C3916006F15B5 /* ClosestCost.cpp */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -357,6 +367,7 @@
 				8415102A287C1AB500DF7805 /* LevelOrder.cpp */,
 				94AFEC7328B3D68B0063BD02 /* MaxDepth.cpp */,
 				94AFEC7528B5224F0063BD02 /* InvertTree.cpp */,
+				9481BE5F293AF881006F15B5 /* CheckTree.cpp */,
 			);
 			path = TreeNode;
 			sourceTree = "<group>";
@@ -416,6 +427,7 @@
 				84D45AD3285B20AE009E7D34 /* ReverseString.swift */,
 				848C0078286194FB005FF4ED /* ReplaceSpace.swift */,
 				848C007A28619F46005FF4ED /* StrStr.swift */,
+				9481BE5D293AE85A006F15B5 /* SecondHighest.cpp */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -558,6 +570,7 @@
 				845E35D4284F5124005C3D92 /* LeetCodeArray.swift in Sources */,
 				84D45ADE285B2154009E7D34 /* FindContentChildren.swift in Sources */,
 				9481BE5A29003652006F15B5 /* CountStudents.cpp in Sources */,
+				9481BE64293C3916006F15B5 /* ClosestCost.cpp in Sources */,
 				84D45AC9285B1A6A009E7D34 /* SortedSquares.swift in Sources */,
 				845E35D9284F5124005C3D92 /* LeetCodeVC.swift in Sources */,
 				84D45A98285985F2009E7D34 /* RemoveElement.swift in Sources */,
@@ -569,6 +582,7 @@
 				845E35EB284F5551005C3D92 /* DynamicEx.swift in Sources */,
 				9481BE5C29267CEB006F15B5 /* NumMatchingSubseq.cpp in Sources */,
 				94AFEC6828A788150063BD02 /* RemoveElement.cpp in Sources */,
+				9481BE60293AF881006F15B5 /* CheckTree.cpp in Sources */,
 				84D45ADA285B2110009E7D34 /* Fib.swift in Sources */,
 				841510272876C21F00DF7805 /* EvalRPN.cpp in Sources */,
 				84151041287D5C5100DF7805 /* OddCells.cpp in Sources */,
@@ -594,6 +608,7 @@
 				94AFEC6328A77A5E0063BD02 /* TwoSum.cpp in Sources */,
 				84D45AEA28604B13009E7D34 /* DetectCycle.swift in Sources */,
 				8415101B287582BD00DF7805 /* MyQueue.cpp in Sources */,
+				9481BE5E293AE85A006F15B5 /* SecondHighest.cpp in Sources */,
 				845E35D6284F5124005C3D92 /* LeetCodeSearch.swift in Sources */,
 				848C0079286194FB005FF4ED /* ReplaceSpace.swift in Sources */,
 				848C0077286171CB005FF4ED /* CanConstruct.swift in Sources */,
@@ -611,6 +626,7 @@
 				94AFEC7828BD08730063BD02 /* Shuffle.cpp in Sources */,
 				84D45ACD285B1F0F009E7D34 /* RemoveElements.swift in Sources */,
 				84D45ADC285B2129009E7D34 /* Combine.swift in Sources */,
+				9481BE62293AFAD6006F15B5 /* SubrectangleQueries.cpp in Sources */,
 				84D45AE82860494D009E7D34 /* RemoveNthFromEnd.swift in Sources */,
 				94AFEC6C28A790880063BD02 /* TwoSum_JO.cpp in Sources */,
 				845E35EC284F5551005C3D92 /* BackTrack.swift in Sources */,

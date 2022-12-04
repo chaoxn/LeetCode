@@ -17,7 +17,19 @@ void STL::Array(){
     double balance[10];
     double balance1[5] = {1000.0, 2.0, 3.4, 7.0, 50.0};
     array<double, 4> a1;
-
+    
+    string s = "abcde";
+    int cur = -1;
+    bool ok = true;
+    for (char c : "acd") {
+        // 查找 cur 之后是否出现了 c
+        cur = s.find(c, cur + 1);
+        if (cur == string::npos) {
+            ok = false;
+            break;
+        }
+    }
+    
 }
 
 int STL::countStudents(vector<int>& students, vector<int>& sandwiches) {
@@ -45,6 +57,29 @@ int STL::countStudents(vector<int>& students, vector<int>& sandwiches) {
     return res;
 }
 
+bool STL::isSubseq(string s, string sub){
+      
+    int i = 0;
+    int j = 0;
+    
+    while (j <= sub.length()) {
+        if (i == s.length()-1) {
+            break;
+        }
+        if (s[i] == sub[j]) {
+            j++;
+        }else{
+            i++;
+        }
+       
+    }
+    
+    if (j == sub.length()) {
+        return true;
+    }
+
+    return false;
+}
 
 
 void STL::Vector(){
