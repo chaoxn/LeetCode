@@ -68,6 +68,7 @@
 		9481BE60293AF881006F15B5 /* CheckTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE5F293AF881006F15B5 /* CheckTree.cpp */; };
 		9481BE62293AFAD6006F15B5 /* SubrectangleQueries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE61293AFAD6006F15B5 /* SubrectangleQueries.cpp */; };
 		9481BE64293C3916006F15B5 /* ClosestCost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE63293C3916006F15B5 /* ClosestCost.cpp */; };
+		9481BE6629443657006F15B5 /* MajorityElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE6529443657006F15B5 /* MajorityElement.cpp */; };
 		94AFEC6328A77A5E0063BD02 /* TwoSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6228A77A5E0063BD02 /* TwoSum.cpp */; };
 		94AFEC6628A781050063BD02 /* RemoveDuplicates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6428A781050063BD02 /* RemoveDuplicates.cpp */; };
 		94AFEC6828A788150063BD02 /* RemoveElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6728A788150063BD02 /* RemoveElement.cpp */; };
@@ -170,6 +171,7 @@
 		9481BE5F293AF881006F15B5 /* CheckTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CheckTree.cpp; sourceTree = "<group>"; };
 		9481BE61293AFAD6006F15B5 /* SubrectangleQueries.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SubrectangleQueries.cpp; sourceTree = "<group>"; };
 		9481BE63293C3916006F15B5 /* ClosestCost.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClosestCost.cpp; sourceTree = "<group>"; };
+		9481BE6529443657006F15B5 /* MajorityElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MajorityElement.cpp; sourceTree = "<group>"; };
 		94AFEC6228A77A5E0063BD02 /* TwoSum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoSum.cpp; sourceTree = "<group>"; };
 		94AFEC6428A781050063BD02 /* RemoveDuplicates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveDuplicates.cpp; sourceTree = "<group>"; };
 		94AFEC6728A788150063BD02 /* RemoveElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveElement.cpp; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 				9481BE5B29267CEB006F15B5 /* NumMatchingSubseq.cpp */,
 				9481BE61293AFAD6006F15B5 /* SubrectangleQueries.cpp */,
 				9481BE63293C3916006F15B5 /* ClosestCost.cpp */,
+				9481BE6529443657006F15B5 /* MajorityElement.cpp */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				84151029287C179900DF7805 /* Traversal.cpp in Sources */,
 				8415102B287C1AB500DF7805 /* LevelOrder.cpp in Sources */,
 				84D45AEC28604F08009E7D34 /* Intersection.swift in Sources */,
+				9481BE6629443657006F15B5 /* MajorityElement.cpp in Sources */,
 				84D45AD8285B20F7009E7D34 /* Traversal.swift in Sources */,
 				8415101F28758B3500DF7805 /* MyStack.cpp in Sources */,
 				845E35D8284F5124005C3D92 /* LeetCodeNode.swift in Sources */,

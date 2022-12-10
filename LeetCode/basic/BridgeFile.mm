@@ -20,6 +20,11 @@
     vector<int> vc2 = {0,1,0,1};
     int c = sp->countStudents(vc1, vc2);
     bool s = sp->isSubseq("abcde", "af");
+    bool s1 = sp->isCircularSentence("leetcode exercises sound delightful");
+    vector<int> vc3 = {3,4};
+    sp->dividePlayers(vc3);
+    
+    
 }
 
 @end

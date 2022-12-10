@@ -80,6 +80,92 @@ bool STL::isSubseq(string s, string sub){
 
     return false;
 }
+    
+void split(const std::string& s, std::vector<std::string>& tokens, char delim = ' ') {
+    tokens.clear();
+    auto string_find_first_not = [s, delim](size_t pos = 0) -> size_t {
+        for (size_t i = pos; i < s.size(); i++) {
+            if (s[i] != delim) return i;
+        }
+        return std::string::npos;
+    };
+    size_t lastPos = string_find_first_not(0);
+    size_t pos = s.find(delim, lastPos);
+    while (lastPos != std::string::npos) {
+        tokens.emplace_back(s.substr(lastPos, pos - lastPos));
+        lastPos = string_find_first_not(pos);
+        pos = s.find(delim, lastPos);
+    }
+}
+
+bool STL::isCircularSentence(string sentence) {
+        
+    vector<string> vec;
+    split(sentence, vec);
+    char pre;
+    char la;
+    char first = vec[0][0];
+    string lastStr = vec[vec.size()-1];
+    char last = lastStr[lastStr.length()-1];
+    
+    if (first != last) {
+        return false;
+    }
+    
+    for (int i = 0; i < vec.size(); i++) {
+        string str = vec[i];
+        
+        if (i > 0) {
+            la = vec[i-1][vec[i-1].length()];
+            pre = str[0];
+            if (pre != la) {
+                return false;
+            }
+        }
+    }
+    
+    return true;
+}
+    
+long long STL::dividePlayers(vector<int>& skill) {
+    
+    long long res = 0;
+    
+    sort(skill.begin(), skill.end());
+    
+    vector<vector<int>> vec;
+    
+    int i = 0;
+    int j = skill.size() - 1;
+    int temp = skill[i] + skill[j];
+    
+    while (i <= j) {
+        
+        if (skill[i] + skill[j] != temp) {
+            return -1;
+        }
+        
+        vec.push_back({skill[i], skill[j]});
+        i++;
+        j--;
+    }
+    
+    for (auto v : vec){
+        res += v[0] * v[1];
+    }
+    
+    return res;
+}
+    
+int minScore(int n, vector<vector<int>>& roads) {
+    int res;
+    
+    
+    
+    
+    
+    return res;
+}
 
 
 void STL::Vector(){

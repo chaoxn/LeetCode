@@ -18,7 +18,8 @@ public:
     void practise();
     int countStudents(vector<int>& students, vector<int>& sandwiches);
     bool isSubseq(string s, string sub);
-
+    bool isCircularSentence(string sentence);
+    long long dividePlayers(vector<int>& skill);
 };
 
 #endif /* STL_hpp */
