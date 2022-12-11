@@ -69,6 +69,8 @@
 		9481BE62293AFAD6006F15B5 /* SubrectangleQueries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE61293AFAD6006F15B5 /* SubrectangleQueries.cpp */; };
 		9481BE64293C3916006F15B5 /* ClosestCost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE63293C3916006F15B5 /* ClosestCost.cpp */; };
 		9481BE6629443657006F15B5 /* MajorityElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE6529443657006F15B5 /* MajorityElement.cpp */; };
+		9481BE69294588B1006F15B5 /* Competition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE67294588B1006F15B5 /* Competition.cpp */; };
+		9481BE6B2945899F006F15B5 /* MinOperations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9481BE6A2945899F006F15B5 /* MinOperations.cpp */; };
 		94AFEC6328A77A5E0063BD02 /* TwoSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6228A77A5E0063BD02 /* TwoSum.cpp */; };
 		94AFEC6628A781050063BD02 /* RemoveDuplicates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6428A781050063BD02 /* RemoveDuplicates.cpp */; };
 		94AFEC6828A788150063BD02 /* RemoveElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC6728A788150063BD02 /* RemoveElement.cpp */; };
@@ -172,6 +174,9 @@
 		9481BE61293AFAD6006F15B5 /* SubrectangleQueries.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SubrectangleQueries.cpp; sourceTree = "<group>"; };
 		9481BE63293C3916006F15B5 /* ClosestCost.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClosestCost.cpp; sourceTree = "<group>"; };
 		9481BE6529443657006F15B5 /* MajorityElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MajorityElement.cpp; sourceTree = "<group>"; };
+		9481BE67294588B1006F15B5 /* Competition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Competition.cpp; sourceTree = "<group>"; };
+		9481BE68294588B1006F15B5 /* Competition.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Competition.hpp; sourceTree = "<group>"; };
+		9481BE6A2945899F006F15B5 /* MinOperations.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MinOperations.cpp; sourceTree = "<group>"; };
 		94AFEC6228A77A5E0063BD02 /* TwoSum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoSum.cpp; sourceTree = "<group>"; };
 		94AFEC6428A781050063BD02 /* RemoveDuplicates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveDuplicates.cpp; sourceTree = "<group>"; };
 		94AFEC6728A788150063BD02 /* RemoveElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveElement.cpp; sourceTree = "<group>"; };
@@ -321,6 +326,7 @@
 				9481BE61293AFAD6006F15B5 /* SubrectangleQueries.cpp */,
 				9481BE63293C3916006F15B5 /* ClosestCost.cpp */,
 				9481BE6529443657006F15B5 /* MajorityElement.cpp */,
+				9481BE6A2945899F006F15B5 /* MinOperations.cpp */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -420,6 +426,8 @@
 				84151032287D1DB500DF7805 /* STL.cpp */,
 				8415102328758C5000DF7805 /* Header.h */,
 				84151030287D11EA00DF7805 /* CppStudy.cpp */,
+				9481BE68294588B1006F15B5 /* Competition.hpp */,
+				9481BE67294588B1006F15B5 /* Competition.cpp */,
 			);
 			path = basic;
 			sourceTree = "<group>";
@@ -568,6 +576,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94AFEC7428B3D68B0063BD02 /* MaxDepth.cpp in Sources */,
+				9481BE69294588B1006F15B5 /* Competition.cpp in Sources */,
 				84D45AE628604484009E7D34 /* SwapPairs.swift in Sources */,
 				94AFEC7028A7991B0063BD02 /* ReverseWords.cpp in Sources */,
 				845E35D4284F5124005C3D92 /* LeetCodeArray.swift in Sources */,
@@ -614,6 +623,7 @@
 				8415101B287582BD00DF7805 /* MyQueue.cpp in Sources */,
 				9481BE5E293AE85A006F15B5 /* SecondHighest.cpp in Sources */,
 				845E35D6284F5124005C3D92 /* LeetCodeSearch.swift in Sources */,
+				9481BE6B2945899F006F15B5 /* MinOperations.cpp in Sources */,
 				848C0079286194FB005FF4ED /* ReplaceSpace.swift in Sources */,
 				848C0077286171CB005FF4ED /* CanConstruct.swift in Sources */,
 				84D45AEE28605195009E7D34 /* IsHappy.swift in Sources */,
