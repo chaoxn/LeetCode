@@ -25,6 +25,51 @@ void split(const std::string& s, std::vector<std::string>& tokens, char delim = 
     }
 }
 
+
+int Competition::smallestValue(int n) {
+    int res = n;
+    int number = 2;
+    while (number < res) {
+        int temp = 0;
+        if (res % number == 0) {
+            temp = res / number + number;
+            res = temp;
+            number = 2;
+            if (res / number == 2 && number == 2) {
+                break;;
+            }
+        }else{
+            number++;
+        }
+    }
+    
+    return res;
+}
+
+int similarPairs(vector<string>& words) {
+    int res = 0;
+       
+    vector<set<char>> sets;
+    for (int i = 0; i < words.size() - 1; i++) {
+        set<char> mSet;
+        for (auto c : words[i]){
+            mSet.insert(c);
+        }
+        sets.push_back(mSet);
+    }
+       
+    for (int i = 0; i < words.size() - 1; i++) {
+          for (int j = i+1; j < words.size(); j++) {
+              if (sets[i] == sets[j]) {
+                  res++;
+              }
+          }
+      }
+
+    return res;
+}
+
+
 bool Competition::isCircularSentence(string sentence) {
         
     vector<string> vec;

@@ -10,6 +10,7 @@
 #import "STL.hpp"
 #import <memory>
 #include "Header.h"
+#include "Competition.hpp"
 @implementation BridgeFile
 
 -(void)testCpp{
@@ -20,6 +21,10 @@
     vector<int> vc2 = {0,1,0,1};
     int c = sp->countStudents(vc1, vc2);
     bool s = sp->isSubseq("abcde", "af");
+    
+    auto s1 = std::make_shared<Competition>();
+
+    s1 -> smallestValue(12);
 }
 
 @end

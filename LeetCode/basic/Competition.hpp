@@ -17,6 +17,7 @@ class Competition {
 public:
     bool isCircularSentence(string sentence);
     long long dividePlayers(vector<int>& skill);
+    int smallestValue(int n);
 };
 
 #endif /* Competition_hpp */
